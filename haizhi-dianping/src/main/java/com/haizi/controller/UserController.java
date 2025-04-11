@@ -1,16 +1,20 @@
 package com.haizi.controller;
 
 
+import cn.hutool.core.util.RandomUtil;
 import com.haizi.dto.LoginFormDTO;
 import com.haizi.dto.Result;
+import com.haizi.entity.User;
 import com.haizi.entity.UserInfo;
 import com.haizi.service.IUserInfoService;
 import com.haizi.service.IUserService;
+import com.haizi.utils.RegexUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.util.Objects;
 
 /**
  * <p>
@@ -35,9 +39,9 @@ public class UserController {
      * 发送手机验证码
      */
     @PostMapping("code")
-    public Result sendCode(@RequestParam("phone") String phone, HttpSession session) {
-        // TODO 发送短信验证码并保存验证码
-        return Result.fail("功能未完成");
+    public Result sendCode(String phone, HttpSession session) {
+      //发送短信验证码并保存验证码
+        return userService.sendCode(phone,session);
     }
 
     /**
@@ -46,8 +50,8 @@ public class UserController {
      */
     @PostMapping("/login")
     public Result login(@RequestBody LoginFormDTO loginForm, HttpSession session){
-        // TODO 实现登录功能
-        return Result.fail("功能未完成");
+       //实现登录功能
+        return userService.login(loginForm,session);
     }
 
     /**
