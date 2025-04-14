@@ -1,11 +1,7 @@
 package com.haizi.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.haizi.dto.LoginFormDTO;
-import com.haizi.dto.Result;
 import com.haizi.entity.User;
-
-import javax.servlet.http.HttpSession;
 
 /**
  * <p>
@@ -17,7 +13,4 @@ import javax.servlet.http.HttpSession;
  */
 public interface IUserService extends IService<User> {
 
-    Result sendCode(String phone, HttpSession session);
-
-    Result login(LoginFormDTO loginForm, HttpSession session);
 }
