@@ -15,14 +15,14 @@ import java.time.LocalDateTime;
  * 
  * </p>
  *
- * @author 虎哥
- * @since 2021-12-22
+ * @author 孩子
+ * @since 2024-4-1
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("tb_user")
-public class User implements Serializable {
+public class User extends com.haizi.dto.User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

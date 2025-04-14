@@ -1,20 +1,18 @@
 package com.haizi.controller;
 
 
-import cn.hutool.core.util.RandomUtil;
 import com.haizi.dto.LoginFormDTO;
 import com.haizi.dto.Result;
-import com.haizi.entity.User;
+import com.haizi.dto.User;
 import com.haizi.entity.UserInfo;
 import com.haizi.service.IUserInfoService;
 import com.haizi.service.IUserService;
-import com.haizi.utils.RegexUtils;
+import com.haizi.utils.UserHolder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
-import java.util.Objects;
 
 /**
  * <p>
@@ -66,8 +64,9 @@ public class UserController {
 
     @GetMapping("/me")
     public Result me(){
-        // TODO 获取当前登录的用户并返回
-        return Result.fail("功能未完成");
+        //获取当前登录的用户并返回
+        User user = UserHolder.getUser();
+        return Result.ok(user);
     }
 
     @GetMapping("/info/{id}")
