@@ -1,9 +1,9 @@
-package com.haizi.dto;
+package com.hmdp.dto;
 
 import lombok.Data;
 
 @Data
-public class User {
+public class UserDTO {
     private Long id;
     private String nickName;
     private String icon;

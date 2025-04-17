@@ -1,16 +1,14 @@
 package com.haizi.controller;
-
-
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.haizi.dto.Result;
-import com.haizi.dto.User;
+import com.haizi.dto.UserDTO;
 import com.haizi.entity.Blog;
+import com.haizi.entity.User;
 import com.haizi.service.IBlogService;
 import com.haizi.service.IUserService;
 import com.haizi.utils.SystemConstants;
 import com.haizi.utils.UserHolder;
 import org.springframework.web.bind.annotation.*;
-
 import javax.annotation.Resource;
 import java.util.List;
 
@@ -34,7 +32,7 @@ public class BlogController {
     @PostMapping
     public Result saveBlog(@RequestBody Blog blog) {
         // 获取登录用户
-        User user = UserHolder.getUser();
+        UserDTO user = UserHolder.getUser();
         blog.setUserId(user.getId());
         // 保存探店博文
         blogService.save(blog);
@@ -53,7 +51,7 @@ public class BlogController {
     @GetMapping("/of/me")
     public Result queryMyBlog(@RequestParam(value = "current", defaultValue = "1") Integer current) {
         // 获取登录用户
-        User user = UserHolder.getUser();
+        UserDTO user = UserHolder.getUser();
         // 根据用户查询
         Page<Blog> page = blogService.query()
                 .eq("user_id", user.getId()).page(new Page<>(current, SystemConstants.MAX_PAGE_SIZE));
@@ -73,7 +71,7 @@ public class BlogController {
         // 查询用户
         records.forEach(blog ->{
             Long userId = blog.getUserId();
-            com.haizi.entity.User user = userService.getById(userId);
+            User user = userService.getById(userId);
             blog.setName(user.getNickName());
             blog.setIcon(user.getIcon());
         });

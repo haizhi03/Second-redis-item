@@ -3,17 +3,12 @@ package com.haizi.controller;
 
 import com.haizi.dto.LoginFormDTO;
 import com.haizi.dto.Result;
-<<<<<<< HEAD
-import com.haizi.dto.User;
+import com.haizi.dto.UserDTO;
+import com.haizi.entity.User;
 import com.haizi.entity.UserInfo;
 import com.haizi.service.IUserInfoService;
 import com.haizi.service.IUserService;
 import com.haizi.utils.UserHolder;
-=======
-import com.haizi.entity.UserInfo;
-import com.haizi.service.IUserInfoService;
-import com.haizi.service.IUserService;
->>>>>>> parent of c0cb36e (第四次提交，设计登录，验证码)
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
@@ -44,8 +39,8 @@ public class UserController {
      */
     @PostMapping("code")
     public Result sendCode(@RequestParam("phone") String phone, HttpSession session) {
-        // TODO 发送短信验证码并保存验证码
-        return Result.fail("功能未完成");
+        // 发送短信验证码并保存验证码
+        return userService.sendCode(phone,session);
     }
 
     /**
@@ -54,8 +49,8 @@ public class UserController {
      */
     @PostMapping("/login")
     public Result login(@RequestBody LoginFormDTO loginForm, HttpSession session){
-        // TODO 实现登录功能
-        return Result.fail("功能未完成");
+        // 实现登录功能
+        return userService.login(loginForm,session);
     }
 
     /**
@@ -71,8 +66,9 @@ public class UserController {
     @GetMapping("/me")
     public Result me(){
         //获取当前登录的用户并返回
-        User user = UserHolder.getUser();
+        UserDTO user = UserHolder.getUser();
         return Result.ok(user);
+
     }
 
     @GetMapping("/info/{id}")
