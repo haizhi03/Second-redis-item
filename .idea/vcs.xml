@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/nginx-1.18.0/html/hmdp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="" />
+    <mapping directory="$PROJECT_DIR$/nginx-1.18.0/html/hzdp" vcs="Git" />
   </component>
 </project>
