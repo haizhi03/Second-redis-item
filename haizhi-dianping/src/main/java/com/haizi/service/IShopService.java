@@ -1,5 +1,6 @@
 package com.haizi.service;
 
+import com.haizi.dto.Result;
 import com.haizi.entity.Shop;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +14,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IShopService extends IService<Shop> {
 
+
+
+    Result queryById(Long id);
+
+    Result update(Shop shop);
 }
