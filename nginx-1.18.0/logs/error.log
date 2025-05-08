@@ -2894,6 +2894,7 @@
 2025/04/29 20:55:28 [error] 16168#16376: *230 CreateFile() "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
 2025/04/29 20:55:46 [error] 16168#16376: *230 CreateFile() "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
 2025/04/29 20:56:37 [error] 16168#16376: *238 CreateFile() "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
+<<<<<<< HEAD
 2025/05/07 17:38:51 [error] 16168#16376: *263 CreateFile() "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
 2025/05/07 17:40:01 [error] 16168#16376: *267 CreateFile() "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
 2025/05/07 17:40:01 [error] 16168#16376: *267 CreateFile() "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
@@ -3161,3 +3162,5 @@
 2025/05/08 16:42:17 [error] 29672#31956: *176 CreateFile() "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
 =======
 >>>>>>> parent of caa643b (编写拦截器，解决状态登录刷新问题)
+=======
+>>>>>>> parent of d20e141 (根据id查询商铺缓存)
