@@ -1,5 +1,4 @@
 package com.haizi.utils;
-
 import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.haizi.dto.UserDTO;

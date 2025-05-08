@@ -2873,6 +2873,7 @@
 2025/04/28 19:24:10 [error] 16168#16376: *74 "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
 2025/04/28 19:24:10 [error] 16168#16376: *74 "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
 2025/04/28 19:24:10 [error] 16168#16376: *74 "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+<<<<<<< HEAD
 2025/04/28 19:38:54 [error] 16168#16376: *118 "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
 2025/04/28 19:38:55 [error] 16168#16376: *118 "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
 2025/04/28 19:38:55 [error] 16168#16376: *118 "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
@@ -3158,3 +3159,5 @@
 2025/05/08 16:42:17 [error] 29672#31956: *176 CreateFile() "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
 2025/05/08 16:42:17 [error] 29672#31956: *176 CreateFile() "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost:8080"
 2025/05/08 16:42:17 [error] 29672#31956: *176 CreateFile() "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
+=======
+>>>>>>> parent of caa643b (编写拦截器，解决状态登录刷新问题)
