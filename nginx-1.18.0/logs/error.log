@@ -2762,7 +2762,7 @@
 2022/03/14 21:47:50 [error] 177736#211436: *2 CreateFile() "D:\lesson\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
 2022/03/14 21:47:52 [error] 177736#211436: *3 CreateFile() "D:\lesson\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
 2022/03/14 21:48:30 [notice] 211132#211144: signal process started
-2025/04/15 20:16:33 [emerg] 45552#26044: CreateFile() "E:\黑马点评\02-实战篇\资料\nginx-1.18.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2025/04/15 20:16:33 [emerg] 45552#26044: CreateFile() "E:\       \02-实战篇\    \nginx-1.18.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
 2025/04/28 17:06:11 [error] 16168#16376: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /api/blog/hot?current=1 HTTP/1.1", upstream: "http://127.0.0.1:8081/blog/hot?current=1", host: "localhost:8080", referrer: "http://localhost:8080/"
 2025/04/28 17:06:11 [error] 16168#16376: *2 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /api/shop-type/list HTTP/1.1", upstream: "http://127.0.0.1:8081/shop-type/list", host: "localhost:8080", referrer: "http://localhost:8080/"
 2025/04/28 17:06:16 [error] 16168#16376: *2 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /api/user/me HTTP/1.1", upstream: "http://127.0.0.1:8081/user/me", host: "localhost:8080", referrer: "http://localhost:8080/info.html"
@@ -2896,6 +2896,7 @@
 2025/04/29 20:55:46 [error] 16168#16376: *230 CreateFile() "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
 2025/04/29 20:56:37 [error] 16168#16376: *238 CreateFile() "G:\develop\desktop\Second-redis-item\nginx-1.18.0/html/hmdp/js/axios.min.map" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /js/axios.min.map HTTP/1.1", host: "localhost:8080"
 <<<<<<< HEAD
+
 >>>>>>> parent of d20e141 (鏍规嵁id鏌ヨ鍟嗛摵缂撳瓨)
 =======
 >>>>>>> parent of d20e141 (鏍规嵁id鏌ヨ鍟嗛摵缂撳瓨)
